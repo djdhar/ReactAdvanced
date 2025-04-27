@@ -2,6 +2,11 @@
 
 import { CounterProvider, useCounter } from "./contexts/CounterContext";
 import { MouseTracker } from "./components/MouseTracker";
+import withLoading from './components/withLoading';
+import UserProfile from './components/UserProfile';
+
+// Wrap UserProfile with withLoading HOC
+const UserProfileWithLoading = withLoading(UserProfile);
 
 function CounterDisplay() {
   const { count, increment, decrement } = useCounter();
@@ -39,6 +44,10 @@ export default function App() {
         </h1>
       )}
     </MouseTracker>
+    <div>
+      <h1>Higher-Order Components Example</h1>
+      <UserProfileWithLoading name="John Doe" age={30} />
+    </div>
     </>
   );
 }
