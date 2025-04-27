@@ -1,6 +1,7 @@
 // src/App.tsx
 
 import { CounterProvider, useCounter } from "./contexts/CounterContext";
+import { MouseTracker } from "./components/MouseTracker";
 
 function CounterDisplay() {
   const { count, increment, decrement } = useCounter();
@@ -27,8 +28,17 @@ function CounterDisplay() {
 
 export default function App() {
   return (
+    <>
     <CounterProvider>
       <CounterDisplay />
     </CounterProvider>
+    <MouseTracker>
+      {({ x, y }) => (
+        <h1 className="text-2xl">
+          Mouse position: ({x}, {y})
+        </h1>
+      )}
+    </MouseTracker>
+    </>
   );
 }
