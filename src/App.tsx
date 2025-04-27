@@ -5,6 +5,7 @@ import { MouseTracker } from "./components/MouseTracker";
 import withLoading from './components/withLoading';
 import UserProfile from './components/UserProfile';
 import { TransitionComponent } from "./components/TransitionComponent";
+import { ModalPortal } from "./components/ModalPortal";
 
 // Wrap UserProfile with withLoading HOC
 const UserProfileWithLoading = withLoading(UserProfile);
@@ -50,6 +51,7 @@ export default function App() {
       <UserProfileWithLoading name="John Doe" age={30} />
     </div>
     <TransitionComponent/>
+    <ModalPortal/>
     </>
   );
 }

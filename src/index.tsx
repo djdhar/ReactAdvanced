@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './modal.css'; // Import the modal CSS
 import App from './App';
 
 const root = ReactDOM.createRoot(
