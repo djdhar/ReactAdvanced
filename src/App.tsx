@@ -8,6 +8,8 @@ import { TransitionComponent } from "./components/TransitionComponent";
 import { ModalPortal } from "./components/ModalPortal";
 import { MemoStaticAndNonStatic } from "./components/MemoStaticAndNonStatic";
 import { ParentCustomInput } from "./components/ParentCustomInput";
+import ControlledInput from "./components/ControlledInput";
+import UncontrolledInput from "./components/UncontrolledInput";
 
 // Wrap UserProfile with withLoading HOC
 const UserProfileWithLoading = withLoading(UserProfile);
@@ -56,6 +58,9 @@ export default function App() {
     <ModalPortal/>
     <MemoStaticAndNonStatic/>
     <ParentCustomInput/>
+    <h1>Controlled & Uncontrolled Inputs</h1>
+    <ControlledInput/>
+    <UncontrolledInput/>
     </>
   );
 }
