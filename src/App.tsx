@@ -10,6 +10,7 @@ import { MemoStaticAndNonStatic } from "./components/MemoStaticAndNonStatic";
 import { ParentCustomInput } from "./components/ParentCustomInput";
 import ControlledInput from "./components/ControlledInput";
 import UncontrolledInput from "./components/UncontrolledInput";
+import { Toggler } from "./components/Toggler";
 
 // Wrap UserProfile with withLoading HOC
 const UserProfileWithLoading = withLoading(UserProfile);
@@ -61,6 +62,7 @@ export default function App() {
     <h1>Controlled & Uncontrolled Inputs</h1>
     <ControlledInput/>
     <UncontrolledInput/>
+    <Toggler/>
     </>
   );
 }
