@@ -4,12 +4,14 @@ import Toggle from './Toggle';
 export function Toggler() {
   return (
     <div>
-      <h2>Compound Component Example</h2>
+        <hr></hr>
+      <h1>Compound Components</h1>
       <Toggle>
-        <Toggle.On>The toggle is ON</Toggle.On>
-        <Toggle.Off>The toggle is OFF</Toggle.Off>
+        <Toggle.On>The toggle is ON </Toggle.On>
+        <Toggle.Off>The toggle is OFF </Toggle.Off>
         <Toggle.Button />
       </Toggle>
+      <hr></hr>
     </div>
   );
 };

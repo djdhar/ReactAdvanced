@@ -10,9 +10,11 @@ export function ParentCustomInput() {
 
   return (
     <div>
-      <h2>useImperativeHandle + forwardRef</h2>
+        <hr></hr>
+      <h1>Export imperative methods to parent components : useImperativeHandle + forwardRef</h1>
       <CustomInput ref={inputRef} />
       <button onClick={handleFocusClick}>Focus Input from Parent</button>
+      <hr></hr>
     </div>
   );
 };

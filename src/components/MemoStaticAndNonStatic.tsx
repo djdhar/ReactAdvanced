@@ -34,13 +34,15 @@ export function MemoStaticAndNonStatic() {
 
   return (
     <div>
-      <h1>React Memoization Example (TS)</h1>
+        <hr/>
+      <h1>React Memoization : React.memo, useMemo, useCallBack</h1>
       <p>Count: {count}</p>
       <p>Expensive Value: {expensiveValue}</p>
       <button onClick={() => setCount(count + 1)}>Increment</button>
 
       {/* Passing constant prop and memoized function */}
       <Child value="Static String" onClick={handleClick} />
+      <hr/>
     </div>
   );
 };

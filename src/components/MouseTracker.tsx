@@ -26,7 +26,10 @@ export function MouseTracker({ children }: MouseTrackerProps) {
 
   return (
     <div className="h-screen">
+      <hr></hr>
+      <h1>Render Props</h1>
       {children(position)}
+      <hr></hr>
     </div>
   );
 }

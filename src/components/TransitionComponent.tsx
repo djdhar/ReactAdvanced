@@ -48,14 +48,15 @@ export function TransitionComponent() {
   
     return (
       <div>
-        <h1>Concurrent Mode Demo</h1>
+        <hr></hr>
+        <h1>Concurrent Mode : useTransition, Suspense, startTransition </h1>
   
         {/* Simulating Suspense for async components */}
         <Suspense fallback={<div>Loading...</div>}>
           <List />
         </Suspense>
   
-        <hr />
+        <br/>
         
         <input
           type="text"
@@ -65,6 +66,7 @@ export function TransitionComponent() {
         />
         
         {isPending ? <p>Updating search...</p> : <p>Search Term: {search}</p>}
+        <hr></hr>
       </div>
     );
   }
