@@ -7,6 +7,7 @@ import UserProfile from './components/UserProfile';
 import { TransitionComponent } from "./components/TransitionComponent";
 import { ModalPortal } from "./components/ModalPortal";
 import { MemoStaticAndNonStatic } from "./components/MemoStaticAndNonStatic";
+import { ParentCustomInput } from "./components/ParentCustomInput";
 
 // Wrap UserProfile with withLoading HOC
 const UserProfileWithLoading = withLoading(UserProfile);
@@ -54,6 +55,7 @@ export default function App() {
     <TransitionComponent/>
     <ModalPortal/>
     <MemoStaticAndNonStatic/>
+    <ParentCustomInput/>
     </>
   );
 }
